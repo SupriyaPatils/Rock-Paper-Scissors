@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissores Game</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="score-cont">
+        <div class="gamename">
+            <p>ROCK</p>
+            <p>PAPER</p>
+            <p>SCISSORS</p>
+        </div>
+        <div class="scoreboard">
+            <div class="compscore">
+                <p>COMPUTER</p>
+                <p>SCORE</p>
+                <br>
+                <span>0</span>
+            </div>
+            <div class="yourscore">
+                <p>YOUR</p>
+                <p>SCORE</p>
+                <br>
+                <span>0</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="game-cont">
+        <div class="pick">
+        <p class="user">YOU PICKED</p>
+        <p class="computer">PC PICKED</p>
+        </div>
+    </div>
+    <div class="option">
+        <div class="Rock con">
+            <div class="image1">
+                <img src="./images/icons8-fist-67 1.png" alt="Rock">
+            </div>
+        </div>
+        <div class="Paper con">
+            <div class="image2">
+                <img src="./images/icons8-hand-64 1.png" alt="Paper">
+            </div>
+        </div>
+        <div class="Scissors con">
+            <div class="image3">
+                <img src="./images/17911 1.png" alt="Scissors">
+            </div>
+            <div class="Rock comp">
+                <div class="image1">
+                    <img src="./images/icons8-fist-67 1.png" alt="Rock">
+                </div>
+            </div>
+            <div class="Paper comp">
+                <div class="image2">
+                    <img src="./images/icons8-hand-64 1.png" alt="Paper">
+                </div>
+            </div>
+            <div class="Scissors comp">
+                <div class="image3">
+                    <img src="./images/17911 1.png" alt="Scissors">
+                </div>
+        </div>
+    </div>
+    
+    <div class="lines">
+        <div class="line1">
+            <hr>
+        </div>
+        <div class="line2">
+            <hr>
+        </div>
+        <div class="line3">
+            <hr>
+        </div>
+    </div>
+
+    <div class="rulebtn">
+        <button class="rule-btn">RULES</button>
+    </div>
+    <div class="popup-cont" id="popup-cont">
+        <div class="PopUp">
+            <button class="close" id="closePopup">X</button>
+            <div class="content">
+                <h1>Game Rules</h1>
+                <ul>
+                    <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+                    <br>
+                    <li>Agree ahead of time whether you'll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
+                    <br>
+                    <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+                    <br>
+                    <li>If both players lay down the same hand, each player lays down another hand</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="winmod">
+        <h1>YOU WIN</h1>
+        <h2>AGAINST PC</h2>
+        <button class="play">PLAY AGAIN</button>
+    </div>
+    <div class="lostmod">
+        <h1>YOU LOST</h1>
+        <h2>AGAINST PC</h2>
+        <button class="play-again">PLAY AGAIN</button>
+    </div>
+    <div class="tiemod">
+        <h1>TIE UP </h1>
+        <button class="play-again0">REPLAY</button>
+    </div>
+    <div id="new-screen1" class="win-screen">
+        <div class="cup image">
+           <img src="asset/win.png" alt="cup" />
+        </div>
+        <div>
+           <h2 id="message">Hurray!!</h2>
+           <h3>You Won The Game</h3>
+           <button id="play-again1">PLAY AGAIN</button>
+        </div>
+        <button id="next" class="next-btn">Next</button>
+     </div>
+    
+    <script src="./index.js"></script>
+</body>
+</html>
